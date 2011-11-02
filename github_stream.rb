@@ -10,6 +10,7 @@ get "/convert" do
     raise "You fool! You forgot to give ze url param!" if params[:url].nil?
 
     content_type :json
+    headers 'Access-Control-Allow-Origin' => '*'
 
     entries = []
     doc = Nokogiri::HTML(open(params[:url]))
