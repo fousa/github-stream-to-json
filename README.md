@@ -2,6 +2,18 @@
 
 Convert the private Github XML ATOM feed to an easily readable JSON format.
 
+## How to use
+
+This is a small sinatra application you can just contact and pass the URL as a GET parameter. This returns a JSON formatted array.
+
+## Tryout
+
+Pass a private URL to the `convert` hook and you'll receive a JSON output.
+
+I created a small [Heroku application](http://github-news-stream.heroku.com) to try it out.
+
+Tryout this [example](http://github-news-stream.heroku.com/convert?url=https://github.com/test-fousa.private.atom?token=f849c37ec229bb1f9aac62a755fe48f5)
+
 ## JSON
 
 This it the output format:
