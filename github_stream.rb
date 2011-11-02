@@ -17,7 +17,8 @@ get "/convert" do
     doc.css("entry").each do |entry|
         entries << { 
             :id    => entry.css("id").first.content,
-            :title => entry.css("title").first.content
+            :title => entry.css("title").first.content,
+            :published_at => entry.css("published").first.content
         }
     end
 
